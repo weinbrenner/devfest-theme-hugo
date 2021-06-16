@@ -3,8 +3,8 @@
 {{ $imgLabel := .Get "imgLabel" }}
 {{ $logo := .Site.Params.logos.jumbo }}
 <div class="jumbo">
-	<div class="jumbo-cover"></div>
-	<div class="inner-wrapper">
+	<div class="jumbo-cover" style="background-image: url('{{ $img }}')" {{ if $imgLabel }}aria-label="{{ $imgLabel }}"{{ end }}></div>
+	<div id="jumbo-overlay"></div>	<div class="inner-wrapper">
 		{{ if $logo }}
 		<img class="jumbo-logo" src="{{ $logo }}" alt="logo {{ .Site.Title }}">
 		{{ end }}
