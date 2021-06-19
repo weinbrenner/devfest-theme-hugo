@@ -1,3 +1,5 @@
+.partners h1 { text-align: center; }
+
 .partners-group {
   h3 {
     text-align: center;
@@ -28,6 +30,10 @@
     justify-content: center;
 
     background-color: ghostwhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-origin: content-box;
 
     box-shadow: var(--box-shadow-1);
     transition: box-shadow var(--animation);
