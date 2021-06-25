@@ -77,3 +77,12 @@ body > main > section.container, body > header.container, body > footer.containe
   margin-top: -var(--toolbar-height);
   visibility: hidden;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
